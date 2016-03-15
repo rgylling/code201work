@@ -1,5 +1,5 @@
 h1 {
-  background: linear-gradient(white, #d3d3d3);
+  background-color:white;
   border-style: solid;
   padding: 20px;
   text-shadow: 0px 10px 10px rgba(0,0,0,.8);
@@ -13,13 +13,14 @@ h4 {
 
 body {
   text-align: center;
+    background: linear-gradient(white 10%, #d3d3d3 90%);
 }
 
 div {
   border-style: solid;
-  background-color: #d3d3d3;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  background-color: #d3d3d3;
+
 }
 
 #soMean {
@@ -30,7 +31,7 @@ div {
 }
 
 footer h3 {
-  background-color: #d3d3d3;
+  background-color: white;
   margin-top: 10%;
   border-style: solid;
 }
