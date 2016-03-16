@@ -1,0 +1,59 @@
+h1 {
+  text-align: center;
+  font-size: 70px;
+  border-style: solid;
+  background-color: #7E705B;
+  font-family: cursive;
+  font-weight: normal;
+}
+
+footer {
+  text-align: center;
+  margin-top: 200px;
+}
+
+h2 {
+  font-size: 30px;
+  border-style: solid;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: 80px;
+  font-family: cursive;
+}
+body {
+  background-image: url(background.jpg);
+}
+p {
+  font-size:20px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+ul,ol {
+  font-size: 20px;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+img {
+  text-align: center;
+  border-radius: 50%;
+  width: 25%;
+  margin-left: 380px;
+  margin-bottom: -40px;
+}
+
+#about {
+    width: 150px;
+    background-color: #7E705B;
+}
+
+#stuff {
+    width: 230px;
+    background-color: #7E705B;
+}
+
+#contact {
+    width: 300px;
+    background-color: #7E705B;
+}
