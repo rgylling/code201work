@@ -36,6 +36,7 @@ var answer = ((question2 * question3 - 2 ) * 5);
 console.log("The answer to the question is " + answer);
 
 /* If you answered right return alert, if user guessed too high return alert, if user guessed too low return alert */
+
 if (question5 == answer ) {
   alert("Wow...You're ugly but you're smart.. Congrats you got the answer right!")
 } else if (question5 > answer) {
@@ -46,4 +47,30 @@ if (question5 == answer ) {
   alert("You guess sucks!")
 };
 
-var question6 = prompt("Last question " + user + ". How much wood could a woodchuck chuck if a woodchuck could chuck ______?" )
+//Asks a riddle to the user
+var question6 = prompt("Next question " + user + ". How much wood could a woodchuck chuck if a woodchuck could chuck ______?" );
+console.log("The user guessed " + question6);
+
+//If riddle is correct alert else if the answer is wrong alert wrong
+if (question6 == "wood") {
+  alert("I thought the answer was 7 but apparently it is wood.. Congrats!")
+} else {
+  alert("Wrong answer dumbo!")
+};
+
+//Declares a variable as true for my while loop
+var askAgain = true;
+
+//Asks the user a question if the user doesnt answer correctly it loops again until answer is right.
+while (askAgain) {
+    var question7 = prompt("Hi " + user + ". What is 100 multiplied by 20.");
+    console.log("The user answered " + question7);
+
+    if (question7 == 2000 ) {
+        askAgain = false;
+        alert("You got the answer right jerk!");
+        break;
+    } else
+       alert("Try again stupid!");
+       askAgain = true;
+    };
