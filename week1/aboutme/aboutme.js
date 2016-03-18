@@ -27,53 +27,31 @@ function userScore () {
 
 //End of function list ------------------------------------------------
 
-//Question1:Choose hair color If answer is black return alert.. If answer is pink return alert
+//Question1-3:Loops through array asking questions
 var user = prompt("Hello what is your name?");
 console.log("The users name is " + user);
 
-var question1 = prompt("Greetings " + user + ". What color is my hair? Pink or Black?");
-logAnswer (question1);
 
-if (question1.toLowerCase() === "black"){
-    alertWrong ();
-  } else  if (question1.toLowerCase() === "pink"){
+var questions = [
+  ["Lets see how smart you really are.. what is 8 multiplied by 8 multiplied by 10",640],
+  ["What is 2 plus 2 ", 4],
+  ['What is 2 minus 0?', 2]
+];
+
+
+for (i = 0; i < questions.length; i++) {
+  question = questions[i][0];
+  answer = questions[i][1];
+  response = prompt(question);
+  if (response == answer) {
     alertRight ();
-    var answersRight = answersRight + 1;
+    answersRight += 1;
+      getRightAnswers ();
   } else {
     alertWrong ();
-  };
-getRightAnswers ();
-
-//Question2: Asks a riddle to the user. If riddle is correct alert else if the answer is wrong alert wrong
-var question6 = prompt("Next question " + user + ". How much wood could a woodchuck chuck if a woodchuck could chuck ______?" );
-logAnswer (question6);
-
-if (question6 == "wood") {
-    alertRight ();
-    var answersRight = answersRight + 1;
-  } else {
-    alertWrong ();
-  };
-getRightAnswers ();
-
-//Declares a variable as true for my while loop
-var askAgain = true;
-
-//Question3:Asks the user a question if the user doesnt answer correctly it loops again until answer is right.
-while (askAgain) {
-    var question7 = prompt("Hi " + user + ". What is 100 multiplied by 20.");
-    logAnswer (question7);
-
-    if (question7 == 2000 ) {
-        askAgain = false;
-        alertRight ();
-        var answersRight = answersRight + 1;
-        break;
-      } else
-        alertWrong ();
-        askAgain = true;
-      };
-getRightAnswers ();
+      getRightAnswers ();
+  }
+}
 
 //Question 4: Gives the user 4 tries to guess my favorite number used a do while loop to prompt atleast once
 var i = 0;
