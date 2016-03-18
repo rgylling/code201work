@@ -5,20 +5,30 @@ window.onload = function() {
 var answersRight = 0;
 
 //Made functions to keep my programming more DRY ----------------------
+function getElements(id, text) {
+  var el = document.getElementById(id);
+  el.textContent = text;
+  return el;
+}
+
 function getRightAnswers () {
-  console.log ("Answers right: " + answersRight)
+  // console.log ("Answers right: " + answersRight)
+  getElements('p2', 'Answers right: ' + answersRight);
 };
 
 function alertWrong () {
-  alert ("Wrong!!!!!!!!!!!")
+  // alert ("Wrong!!!!!!!!!!!")
+  getElements('p3', 'Wrong!!!!!!!!!!!');
 };
 
 function alertRight () {
-  alert ("You got the answer correct!")
+  // alert ("You got the answer correct!")
+  getElements('p3', 'You got the answer correct!');
 };
 
 function logAnswer (useranswer) {
-  console.log ("The users answer is: " + useranswer)
+  // console.log ("The users answer is: " + useranswer)
+  getElements('p1', 'Your guess is: ' + useranswer);
 };
 
 function userScore () {
@@ -47,9 +57,11 @@ for (i = 0; i < questions.length; i++) {
     alertRight ();
     answersRight += 1;
       getRightAnswers ();
+      logAnswer(response);
   } else {
     alertWrong ();
       getRightAnswers ();
+      logAnswer(response);
   }
 }
 
