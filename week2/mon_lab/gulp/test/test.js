@@ -23,7 +23,12 @@ describe('My first test', function() {
 // test the issix function
   it('should return true because 18 is a multiple of 6', function() { assert(true == compute.isSix(18)); });
   it('should return false because 10 is not a multiple of 6', function() { assert(false == compute.isSix(10)); });
-
-  it('should return 8 because 8 is the sum of 4 and 4', function() { assert(8 == compute.sum(4,4)); });
+// test sum function
+  it('should return 8 because 8 is the sum of 4 and 4', function() { assert(6 == compute.sum(2,4)); });
   it('should return false because the sum of 5 and 4 is 9', function() { assert(9 == compute.sum(4,5)); });
+// test multiply function
+
+  it('should return 16 because 16 is the product of 4 and 4', function() { assert(16 == compute.multiply(4,4)); });
+  it('should return false because the product of 5 and 4 is 19', function() { assert(19 == compute.multiply(4,5)); });
+
 });
