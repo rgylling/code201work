@@ -53,29 +53,43 @@ function isSix(num) {
 
 exports.isSix = isSix;
 
-function sum (a,b) {
+function sum1 (a,b) {
   var answer = a + b;
   console.log ("The sum of " + a + " and " + b + " is " + answer);
   return answer
 }
 
-exports.sum = sum;
+exports.sum1 = sum1;
 
-function multiply (a,b) {
+function multiply1 (a,b) {
   var answer = a * b;
   console.log ("The product of " + a + " and " + b + " is " + answer);
   return answer
 }
 
-exports.multiply = multiply;
+exports.multiply1 = multiply1;
 
 function sumAndMultiply (a,b,c) {
-  var sum = a + b + c;
-  var multiply = a * b * c;
+  var sum = sum1(a,b) + c;
+  var multiply = multiply1(a,b) * c;
   var array = [sum , multiply];
-  console.log (a + " and " + b + " and " + c + " sum to " + sum);
-  console.log ("The numbers " + a + " and " + b + " and " + c + " have a product of " + sum);
+  console.log (a + " and " + b + " and " + c + " sum to " + sum1);
+  console.log ("The numbers " + a + " and " + b + " and " + c + " have a product of " + multiply1);
 return array;
 }
 
 exports.sumAndMultiply = sumAndMultiply;
+
+
+var array1 = [1,2,3]
+
+function sumArray (a) {
+  var sum = 0
+  for (i=0; i < a.length ; i++) {
+    sum = sum + a[i];
+}
+console.log (a + " was passed and the sum is " + sum);
+return sum;
+};
+
+exports.sumArray = sumArray;
