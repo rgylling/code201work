@@ -60,3 +60,11 @@ function sum (a,b) {
 }
 
 exports.sum = sum;
+
+function multiply (a,b) {
+  var answer = a * b;
+  console.log ("The product of " + a + " and " + b + " is " + answer);
+  return answer
+}
+
+exports.multiply = multiply;
