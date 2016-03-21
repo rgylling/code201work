@@ -68,3 +68,14 @@ function multiply (a,b) {
 }
 
 exports.multiply = multiply;
+
+function sumAndMultiply (a,b,c) {
+  var sum = a + b + c;
+  var multiply = a * b * c;
+  var array = [sum , multiply];
+  console.log (a + " and " + b + " and " + c + " sum to " + sum);
+  console.log ("The numbers " + a + " and " + b + " and " + c + " have a product of " + sum);
+return array;
+}
+
+exports.sumAndMultiply = sumAndMultiply;
