@@ -29,6 +29,6 @@ describe('My first test', function() {
 // test multiply function
 
   it('should return 16 because 16 is the product of 4 and 4', function() { assert(16 == compute.multiply(4,4)); });
-  it('should return false because the product of 5 and 4 is 19', function() { assert(19 == compute.multiply(4,5)); });
+  it('should return false because the product of 5 and 4 is 19', function() { assert(20 == compute.multiply(4,5)); });
 
 });
