@@ -35,10 +35,10 @@ describe('My first test', function() {
   it('should return 8 because 8 is the product of 2,2, and 2', function() { assert(8 == compute.sumAndMultiply(2,2,2)[1]); });
 
 // test sumarray function
-    var array1 = [1,2,3]
-    it('should return 6 because 6 is the sum of 1,2, and 3', function() { assert(6 == compute.sumArray(array1)); });
+  var array1 = [1,2,3]
+  it('should return 6 because 6 is the sum of 1,2, and 3', function() { assert(6 == compute.sumArray(array1)); });
 // test multiplyarray function
-    it('should return 9 because 9 is the product of 1,2, and 3', function() { assert(6 == compute.multiplyArray(array1)); });
+  it('should return 9 because 9 is the product of 1,2, and 3', function() { assert(6 == compute.multiplyArray(array1)); });
 
 
 });
