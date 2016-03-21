@@ -29,15 +29,16 @@ describe('My first test', function() {
 // test multiply function
 
   it('should return 16 because 16 is the product of 4 and 4', function() { assert(16 == compute.multiply1(4,4)); });
-  it('should return false because the product of 5 and 4 is 19', function() { assert(20 == compute.multiply1(4,5)); });
+  it('should return 20 because 20 is the product of 5 and 4', function() { assert(20 == compute.multiply1(4,5)); });
 // test sum and multiply function
   it('should return 9 because 9 is the sum of 2,3, and 4', function() { assert(9 == compute.sumAndMultiply(2,3,4)[0]); });
   it('should return 8 because 8 is the product of 2,2, and 2', function() { assert(8 == compute.sumAndMultiply(2,2,2)[1]); });
 
-  // test sumarray function
+// test sumarray function
     var array1 = [1,2,3]
-    it('should return 9 because 9 is the sum of 2,3, and 4', function() { assert(6 == compute.sumArray(array1)); });
-
+    it('should return 6 because 6 is the sum of 1,2, and 3', function() { assert(6 == compute.sumArray(array1)); });
+// test multiplyarray function
+    it('should return 9 because 9 is the product of 1,2, and 3', function() { assert(6 == compute.multiplyArray(array1)); });
 
 
 });

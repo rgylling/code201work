@@ -93,3 +93,17 @@ return sum;
 };
 
 exports.sumArray = sumArray;
+
+
+function multiplyArray (a) {
+  var sum = 1
+  for (i=0; i < a.length ; i++) {
+    sum = sum * a[i];
+
+}
+console.log (a + " was passed and the sum is " + sum);
+return sum;
+};
+
+
+exports.multiplyArray = multiplyArray;
