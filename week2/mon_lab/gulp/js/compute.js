@@ -52,3 +52,11 @@ function isSix(num) {
 }
 
 exports.isSix = isSix;
+
+function sum (a,b) {
+  var answer = a + b;
+  console.log ("The sum of " + a + " and " + b + " is " + answer);
+  return answer
+}
+
+exports.sum = sum;
