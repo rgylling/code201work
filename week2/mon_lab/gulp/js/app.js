@@ -1,4 +1,6 @@
 var exports = {};
+
+// Good way to get an element
 var question1  = document.getElementById('question1');
 var answer1 = document.getElementById('answer1');
 var question2 = document.getElementById('question2');
