@@ -1,6 +1,7 @@
 var assert = require('assert');
 var compute = require('../js/compute.js');
 
+// Great job testing out your functions
 describe('My first test', function() {
   it('should check first question', function() {
     assert.deepEqual(compute.getQuestion(0), 'first');
@@ -10,7 +11,7 @@ describe('My first test', function() {
     assert.deepEqual(compute.getQuestion(2), 'third');
   });
 
-  
+
 
 // Test the is even function
   it('should return true because 2 is even', function() { assert(true == compute.isEven(2)); });
