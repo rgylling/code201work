@@ -31,7 +31,6 @@ exports.isSix = isSix;
 
 function sum1 (a,b) {
   var answer = a + b;
-  console.log ("The sum of " + a + " and " + b + " is " + answer);
   return answer
 }
 
@@ -39,7 +38,6 @@ exports.sum1 = sum1;
 
 function multiply1 (a,b) {
   var answer = a * b;
-  console.log ("The product of " + a + " and " + b + " is " + answer);
   return answer
 }
 
@@ -49,8 +47,8 @@ function sumAndMultiply (a,b,c) {
   var sum = sum1(a,b) + c;
   var multiply = multiply1(a,b) * c;
   var array = [sum , multiply];
-  console.log (a + " and " + b + " and " + c + " sum to " + sum1);
-  console.log ("The numbers " + a + " and " + b + " and " + c + " have a product of " + multiply1);
+  console.log (a + " and " + b + " and " + c + " sum to " + sum);
+  console.log ("The numbers " + a + " and " + b + " and " + c + " have a product of " + multiply);
 return array;
 }
 
