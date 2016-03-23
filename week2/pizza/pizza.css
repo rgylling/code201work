@@ -70,13 +70,14 @@ ul li {
   margin:10px auto 10px auto;
   text-align: center;
   list-style-type: none;
-  color: white;
+  -webkit-padding-start: 0px;
 }
-ul {
-  margin: 0px;
+#hours {
   padding: 0;
   background-color: #B9121B;
+  text-align: center;
   display:block;
+  border-style: hidden;
   border-color: black;
   color: white;
   border-radius: 50%;
@@ -84,6 +85,32 @@ ul {
 -moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 }
+
+
+
+#help li {
+  color: black;
+  display: block;
+  padding-left: 0;
+  margin-top:10px;
+  margin-bottom: 30px
+
+}
+
+#storedata {
+  text-align: center;
+  font-size: 80px;
+  margin:10px auto 10px auto;
+  font-family: cursive;
+}
+
+
+ul {
+  -webkit-padding-start: 0px;
+  border-style: solid;
+
+}
+
 
 footer {
   margin:80px auto 10px auto;
