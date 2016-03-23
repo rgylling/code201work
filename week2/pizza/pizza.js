@@ -12,12 +12,24 @@ function drivers (a) {
     }
 } ;
 
-function loopMe (a,b,c,d) {
-  for (i=0;i < a.length; i++) {
-    for (j=0; j < b.length; j++) {
-    console.log (a[i] + b + " pizzas " + myRandomNumber(c[i][0],c[i][1]) + " deliveries -- ["+ d + "]"); }
-}
+var totalArr = [];
+var totalPizza;
+function loopMe(a, b, c, d) {
+  for (i = 0; i < a.length; i++) {
+    var randomDriver = myRandomNumber(c[0], c[1]);
+    var driverMath = drivers(randomDriver);
+    var pizzaMath = myRandomNumber(b[0], b[1]);
+    totalArr.push(pizzaMath);
+    console.log(a[i] + pizzaMath + " pizzas " + randomDriver + " deliveries -- [" + driverMath + "]");
+  }
+  totalPizza = totalArr.reduce(function(a, b) {
+    return a + b;
+  });
+  console.log(totalArr);
+  console.log(totalPizza);
 };
+
+
 
 
 
@@ -41,24 +53,18 @@ var locationOne = {
   delivery4: [3,8],
   delivery5: [5,12],
   delivery6: [6,11],
-  driver1: drivers (locationOne.delivery1),
-  driver2: drivers (locationOne.delivery2),
-  driver3: drivers (locationOne.delivery3),
-  driver4: drivers (locationOne.delivery4),
-  driver5: drivers (locationOne.delivery5),
-  driver6: drivers (locationOne.delivery6),
 };
 
-console.log(locationOne.pizzaone);
 
-loopMe (locationOne.timeslotone,locationOne.pizzaone,locationOne.delivery1,locationOne.driver1);
 
-loopMe (locationOne.timeslottwo,locationOne.pizzatwo,locationOne.delivery2,locationOne.driver2);
+loopMe (locationOne.timeslotone,locationOne.pizzaone,locationOne.delivery1,totalPizza);
 
-loopMe (locationOne.timeslotthree,locationOne.pizzathree,locationOne.delivery3,locationOne.driver3);
+loopMe (locationOne.timeslottwo,locationOne.pizzatwo,locationOne.delivery2,totalPizza);
 
-loopMe (locationOne.timeslotfour,locationOne.pizzafour,locationOne.delivery4,locationOne.driver4);
+loopMe (locationOne.timeslotthree,locationOne.pizzathree,locationOne.delivery3,totalPizza);
 
-loopMe (locationOne.timeslotfive,locationOne.pizzafive,locationOne.delivery5,locationOne.driver5);
+loopMe (locationOne.timeslotfour,locationOne.pizzafour,locationOne.delivery4,totalPizza);
 
-loopMe (locationOne.timeslotsix,locationOne.pizzasix,locationOne.delivery6,locationOne.driver6);
+loopMe (locationOne.timeslotfive,locationOne.pizzafive,locationOne.delivery5,totalPizza);
+
+loopMe (locationOne.timeslotsix,locationOne.pizzasix,locationOne.delivery6,totalPizza);
