@@ -11,6 +11,12 @@ footer {
   text-align: center;
   margin-top: 200px;
   margin-left: 10px;
+  color:white;
+}
+
+#foot {
+  font-family: cursive;
+    color:white;
 }
 
 h2 {
