@@ -1,12 +1,12 @@
 
+//Function for logging store names
 function title (a){
-var Content = document.createElement('li');
-  var newText = document.createTextNode (a);
-  Content.appendChild(newText);
-  var position = document.getElementsByTagName('ul')[0];
-  position.appendChild(Content)
+  var Content = document.createElement('li');
+    var newText = document.createTextNode (a);
+      Content.appendChild(newText);
+        var position = document.getElementById('pleasework');
+          if (position){position.appendChild(Content)}
 }
-
 
 //Function to compute my random number between a min and max number
 function myRandomNumber (min,max) {
@@ -14,39 +14,56 @@ function myRandomNumber (min,max) {
 }
 
 //Function to compute my drivers recommendeds
+
 function drivers (a) {
   var answer =  Math.ceil(a / 3)
-    if ( answer == 0) {
+    if ( answer == 0 || answer < 0) {
       return "Driver not recommended";
-      } else {
-        return "Drivers recommended: " + answer;
+        } else {
+          return "Drivers recommended: " + answer;
     }
 } ;
+
+function checkNum (a,b) {
+  var doesthiswork = 0;
+    var doeswork = 1;
+      if (a == 0){
+        doesthiswork * b;
+          return doesthiswork
+            } else if (a == 1){
+              doeswork * (b-b+1);
+                return doeswork
+                  } else {
+                    return b
+}
+}
+
 // This loops through my each of my sections and posts it to the page
 var totalArr = [];
 var totalPizza;
 function loopMe(a, b, c, d) {
   for (i = 0; i < a.length; i++) {
-    var randomDriver = myRandomNumber(c[0], c[1]);
-      var driverMath = drivers(randomDriver);
-        var pizzaMath = myRandomNumber(b[0], b[1]);
-          totalArr.push(pizzaMath);
-          var pizzaContent = document.createElement('li');
-          var newText = document.createTextNode ( a[i] + pizzaMath + " pizzas " + randomDriver + " deliveries -- [" + driverMath + "]");
-            pizzaContent.appendChild(newText);
-              var position = document.getElementsByTagName('ul')[0];
-              position.appendChild(pizzaContent)
+        var randomDriver = myRandomNumber(c[0], c[1]);
+          var pizzaMath = myRandomNumber(b[0], b[1]);
+            var checkNumber = checkNum(pizzaMath,randomDriver);
+              var driverMath = drivers(checkNumber);
+                totalArr.push(pizzaMath);
+                  var pizzaContent = document.createElement('li');
+                    var newText = document.createTextNode ( a[i] + pizzaMath + " pizzas " + checkNumber + " deliveries -- [" + driverMath + "]");
+                      pizzaContent.appendChild(newText);
+                        var position = document.getElementById('pleasework');
+                          if(position){ position.appendChild(pizzaContent)}
 
   }
-      totalPizza = totalArr.reduce(function(a, b) {
-    return a + b;
+                            totalPizza = totalArr.reduce(function(a, b) {
+                              return a + b;
   });
 
-  console.log(totalPizza);
+                                console.log(totalPizza);
 };
 
 
-// I made an Object with all of the information I needed
+// Object for my first location
 var locationOne = {
   name: 'Beaverton',
   timeslotone:["8:00am ","9:00am ","10:00am "],
@@ -68,7 +85,7 @@ var locationOne = {
   delivery5: [5,12],
   delivery6: [6,11],
 };
-
+// Object for my second location
 var locationTwo = {
   name: 'Hillsboro',
   timeslotone:["8:00am ","9:00am ","10:00am "],
@@ -90,7 +107,7 @@ var locationTwo = {
   delivery5: [5,12],
   delivery6: [6,11],
 };
-
+// Object for my third location
 var locationThree = {
   name: 'Downtown',
   timeslotone:["8:00am ","9:00am ","10:00am "],
@@ -112,7 +129,7 @@ var locationThree = {
   delivery5: [5,12],
   delivery6: [6,11],
 };
-
+// Object for my fourth location
 var locationFour = {
   name: 'Northeast',
   timeslotone:["8:00am ","9:00am ","10:00am "],
@@ -134,7 +151,7 @@ var locationFour = {
   delivery5: [5,12],
   delivery6: [6,11],
 };
-
+// Object for my fifth location
 var locationFive = {
   name: 'Clackamas',
   timeslotone:["8:00am ","9:00am ","10:00am "],
@@ -156,7 +173,7 @@ var locationFive = {
   delivery5: [5,12],
   delivery6: [6,11],
 };
-
+// Object for my sixth location
 var locationSix = {
   name: 'PDX Airport',
   timeslotone:["8:00am ","9:00am ","10:00am "],
@@ -178,7 +195,6 @@ var locationSix = {
   delivery5: [5,12],
   delivery6: [6,11],
 };
-
 
 //Passed three different variables to my loop function from my object
 title (locationOne.name);
@@ -224,7 +240,6 @@ loopMe (locationSix.timeslotfour,locationSix.pizzafour,locationSix.delivery4,tot
 loopMe (locationSix.timeslotfive,locationSix.pizzafive,locationSix.delivery5,totalPizza);
 loopMe (locationSix.timeslotsix,locationSix.pizzasix,locationSix.delivery6,totalPizza);
 
-console.log(totalPizza + "hi");
 var workPlease = document.getElementById('number');
-console.log (workPlease);
-workPlease.textContent = totalPizza;
+//Logged totalPizza and multiplied by 5 to get a weekly average
+workPlease.textContent = (totalPizza * 5) + ' Number Happy Pizza Odysseys This Week!';

@@ -86,14 +86,14 @@ ul li {
 box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 }
 
-
-
 #help li {
   color: black;
   display: block;
   padding-left: 0;
   margin-top:10px;
   margin-bottom: 30px
+  border-style: solid;
+  border-color: #B9121B;
 
 }
 
@@ -101,16 +101,19 @@ box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
   text-align: center;
   font-size: 80px;
   margin:10px auto 10px auto;
-  font-family: cursive;
+  font-family: 'Nothing You Could Do', cursive;
+  background-color: #B9121B;
+  color:white;
+  border-radius: 50%;
 }
 
-
-ul {
+#pleasework {
   -webkit-padding-start: 0px;
   border-style: solid;
-
+  border-color: #B9121B;
+  margin:10px auto 10px auto;
+  text-align: center;
 }
-
 
 footer {
   margin:80px auto 10px auto;
