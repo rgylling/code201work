@@ -136,7 +136,7 @@ function title (a){
 //click the button!
 var clickTheButton = document.getElementById("mybutton");
 
-//eventListener and function for click event to add to ul
+//eventListener and function for click event to add to uls
 clickTheButton.addEventListener("click", function() {
   var userInput = document.getElementById("textbox").value;
   title(userInput);
