@@ -3,12 +3,12 @@ body {
 }
 table {
   text-align:center;
-  margin: 10px auto 10px auto;
-  padding: 10px;
+  margin: 5px auto 5px auto;
+  padding: 5px;
   border: solid black;
   background-color: #B9121B;
   color:white;
-
+  font-size: 18px;
 }
 
 h1 {
@@ -32,7 +32,6 @@ img {
   width: 40%;
   display:block;
   border-radius: 25%
-
 }
 
 iframe {
@@ -44,9 +43,8 @@ height: 450px;
 -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 -moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
-
-
 }
+
 #number {
   text-align: center;
   font-size: 30px;

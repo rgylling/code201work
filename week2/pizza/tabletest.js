@@ -134,22 +134,26 @@ function title (a){
         body.appendChild(tbl);
       }
 }
-
+// Calling my title function to amend it to the page
 title (beaverton.name);
+// Calling several loop functions
 loopMe(timeSlots,beaverton.arr,beaverton.arr1)
+title (totalPizza + " Pizzas sold today!")
 title (hillsboro.name);
 loopMe(timeSlots,hillsboro.arr,hillsboro.arr1)
+title (totalPizza + " Pizzas sold today!")
 title (downtown.name);
 loopMe(timeSlots,downtown.arr,downtown.arr1)
+title (totalPizza + " Pizzas sold today!")
 title (northeast.name);
 loopMe(timeSlots,northeast.arr,northeast.arr1)
+title (totalPizza + " Pizzas sold today!")
 title (clackamas.name);
 loopMe(timeSlots,clackamas.arr,clackamas.arr1)
+title (totalPizza + " Pizzas sold today!")
 title (airport.name);
 loopMe(timeSlots,airport.arr,airport.arr1)
 title (totalPizza + " Pizzas sold today!")
-
-
 
 var workPlease = document.getElementById('number');
 //Logged totalPizza and multiplied by 5 to get a weekly average
