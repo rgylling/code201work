@@ -141,7 +141,9 @@ clickTheButton.addEventListener("click", function() {
   var userInput = document.getElementById("textbox").value;
   title(userInput);
   loopMe(timeSlots,beaverton.arr,beaverton.arr1);
-  title (totalPizza + " Pizzas sold today!")
+  title (totalPizza + " Pizzas sold today!");
+  document.getElementById("textbox").value = "Thank you!";
+
 }
 );
 
