@@ -71,7 +71,7 @@ var locationOne = {
   timeslotthree:["2:00pm ","3:00pm ","4:00pm "],
   timeslotfour:["5:00pm ","6:00pm ","7:00pm "],
   timeslotfive:["8:00pm ", "9:00pm " , "10:00pm "],
-  timeslotsix:["11:00pm " , "12:00pm ", "1:00pm "],
+  timeslotsix:["11:00pm " , "12:00am ", "1:00am "],
   pizzaone: [0,4],
   pizzatwo: [0,7],
   pizzathree: [2,15],
