@@ -56,6 +56,46 @@ box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
   margin:60px auto 10px auto;
 }
 
+#myform {
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#mybutton {
+  font-size: 24px;
+  font-weight: bolder;
+  border-width: medium;
+  border-color: #B9121B;
+  background-color: #B9121B;
+  color: white;
+}
+
+
+
+#entername {
+  text-align: center;
+  font-size: 40px;
+  margin:30px auto 30px auto;
+  font-family: 'Nothing You Could Do', cursive;
+  background-color: #B9121B;
+  color:white;
+  width: 400px;
+
+}
+
+#textbox {
+    font-size: 24px;
+    font-weight: bolder;
+    border-width: medium;
+    border-color: #B9121B;
+    background-color: #B9121B;
+    color: white;
+  }
+}
+
+
+
+
 #data {
     margin:10px auto 10px auto;
     text-align: center;

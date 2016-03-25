@@ -87,7 +87,6 @@ function checkNum (a,b) {
 var totalArr = [];
 var totalPizza;
 
-
 /* The holy grail of all functions.. Loops through my timeslots while posting randomly
 generated pizzas and delivery times. Also creates tables for each section and posts it to the page utilizing the DOM */
 function loopMe (a,boo,c){
@@ -134,6 +133,18 @@ function title (a){
         body.appendChild(tbl);
       }
 }
+//click the button!
+var clickTheButton = document.getElementById("mybutton");
+
+//eventListener and function for click event to add to ul
+clickTheButton.addEventListener("click", function() {
+  var userInput = document.getElementById("textbox").value;
+  title(userInput);
+  loopMe(timeSlots,beaverton.arr,beaverton.arr1);
+  title (totalPizza + " Pizzas sold today!")
+}
+);
+
 // Calling my title function to amend it to the page
 title (beaverton.name);
 // Calling several loop functions
@@ -154,6 +165,7 @@ title (totalPizza + " Pizzas sold today!")
 title (airport.name);
 loopMe(timeSlots,airport.arr,airport.arr1)
 title (totalPizza + " Pizzas sold today!")
+
 
 var workPlease = document.getElementById('number');
 //Logged totalPizza and multiplied by 5 to get a weekly average
