@@ -134,18 +134,19 @@ function title (a){
       }
 }
 //click the button!
-var clickTheButton = document.getElementById("mybutton");
 
+var clickTheButton = document.getElementById("mybutton");
+if(clickTheButton){
 //eventListener and function for click event to add to uls
-clickTheButton.addEventListener("click", function() {
+  clickTheButton.addEventListener("click", function() {
   var userInput = document.getElementById("textbox").value;
   title(userInput);
   loopMe(timeSlots,beaverton.arr,beaverton.arr1);
   title (totalPizza + " Pizzas sold today!");
-  document.getElementById("textbox").value = "Thank you!";
-
-}
+  document.getElementById("textbox").value = "New Store Added! ;)";
+  }
 );
+};
 
 // Calling my title function to amend it to the page
 title (beaverton.name);
@@ -168,7 +169,8 @@ title (airport.name);
 loopMe(timeSlots,airport.arr,airport.arr1)
 title (totalPizza + " Pizzas sold today!")
 
-
 var workPlease = document.getElementById('number');
 //Logged totalPizza and multiplied by 5 to get a weekly average
+if (workPlease){
 workPlease.textContent = (totalPizza * 5) + ' Number Happy Pizza Odysseys This Week!';
+};
