@@ -34,6 +34,10 @@ img {
   border-radius: 25%
 }
 
+#handz {
+  width: 10%;
+}
+
 iframe {
 display:block;
 margin:50px auto 10px auto;
@@ -113,6 +117,17 @@ box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
   margin-bottom: 30px;
 }
 
+#boxme {
+  border-style: solid;
+  border-width: thick;
+  margin:40px auto 80px auto;
+  border-color: #B9121B;
+  width: 500px;
+  -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+}
+
 ul li {
   margin:10px auto 10px auto;
   text-align: center;
@@ -157,9 +172,18 @@ box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 #pleasework {
   -webkit-padding-start: 0px;
   border-style: solid;
+  border-width: thick;
   border-color: #B9121B;
   margin:10px auto 10px auto;
   text-align: center;
+  -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+  -moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+  box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+}
+
+#pizzame {
+  margin:70px auto 60px auto;
+  width: 30%
 }
 
 footer {
