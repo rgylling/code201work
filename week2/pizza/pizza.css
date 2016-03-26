@@ -1,0 +1,192 @@
+body {
+  background-color: white;
+}
+table {
+  text-align:center;
+  margin: 5px auto 5px auto;
+  padding: 5px;
+  border: solid black;
+  background-color: #B9121B;
+  color:white;
+  font-size: 18px;
+}
+
+h1 {
+  font-family: 'Nothing You Could Do', cursive;
+  text-align: center;
+  font-size: 90px;
+  border-bottom-style: hidden;
+  background-color: #B9121B;
+  font-weight: normal;
+  margin:10px auto 0px auto;
+  color:white;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 29px 39px -12px rgba(0,0,0,0.72);
+  -moz-box-shadow: 10px 29px 39px -12px rgba(0,0,0,0.72);
+  box-shadow: 10px 29px 39px -12px rgba(0,0,0,0.72);
+}
+
+img {
+  margin:30px auto 20px auto;
+  text-align: center;
+  width: 40%;
+  display:block;
+  border-radius: 25%
+}
+
+#handz {
+  width: 10%;
+}
+
+iframe {
+display:block;
+margin:50px auto 10px auto;
+padding: 0;
+width: 550px;
+height: 450px;
+-webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+}
+
+#number {
+  text-align: center;
+  font-size: 30px;
+  border-color: black;
+  background-color: white;
+  color: #B9121B;
+  font-family:cursive;
+  font-weight:bolder;
+  margin:60px auto 10px auto;
+}
+
+#myform {
+  margin:30px auto 30px auto;
+  text-align: center;
+}
+
+#mybutton {
+  font-size: 24px;
+  font-weight: bolder;
+  border-width: medium;
+  border-color: #B9121B;
+  background-color: #B9121B;
+  color: white;
+}
+
+
+
+#entername {
+  text-align: center;
+  font-size: 40px;
+  margin:30px auto 30px auto;
+  font-family: 'Nothing You Could Do', cursive;
+  background-color: #B9121B;
+  color:white;
+  width: 400px;
+
+}
+
+#textbox {
+    font-size: 24px;
+    font-weight: bolder;
+    border-width: medium;
+    border-color: #B9121B;
+    background-color: #B9121B;
+    color: white;
+  }
+}
+
+
+
+
+#data {
+    margin:10px auto 10px auto;
+    text-align: center;
+    list-style-type: none;
+}
+
+#locate {
+  margin:10px auto 10px auto;
+  text-align: center;
+}
+
+#slogan {
+  text-align: center;
+  font-family: cursive;
+  margin-bottom: 30px;
+}
+
+#boxme {
+  border-style: solid;
+  border-width: thick;
+  margin:40px auto 80px auto;
+  border-color: #B9121B;
+  width: 500px;
+  -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+}
+
+ul li {
+  margin:10px auto 10px auto;
+  text-align: center;
+  list-style-type: none;
+  -webkit-padding-start: 0px;
+}
+#hours {
+  padding: 0;
+  background-color: #B9121B;
+  text-align: center;
+  display:block;
+  border-style: hidden;
+  border-color: black;
+  color: white;
+  border-radius: 50%;
+  -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+-moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+}
+
+#help li {
+  color: black;
+  display: block;
+  padding-left: 0;
+  margin-top:10px;
+  margin-bottom: 30px
+  border-style: solid;
+  border-color: #B9121B;
+
+}
+
+#storedata {
+  text-align: center;
+  font-size: 80px;
+  margin:10px auto 10px auto;
+  font-family: 'Nothing You Could Do', cursive;
+  background-color: #B9121B;
+  color:white;
+  border-radius: 50%;
+}
+
+#pleasework {
+  -webkit-padding-start: 0px;
+  border-style: solid;
+  border-width: thick;
+  border-color: #B9121B;
+  margin:10px auto 10px auto;
+  text-align: center;
+  -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+  -moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+  box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+}
+
+#pizzame {
+  margin:70px auto 60px auto;
+  width: 30%
+}
+
+footer {
+  margin:80px auto 10px auto;
+  text-align: center;
+}
