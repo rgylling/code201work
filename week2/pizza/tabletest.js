@@ -7,7 +7,7 @@ var beavertonPizza =
 var beavertonDeliveries = [[0,4],[0,4],[0,4],[0,4],[0,4],[0,4],[1,4],[1,4],[1,4],[3,8],[3,8],[3,8],[5,12],[5,12],[5,12],[6,11],[6,11],[6,11]];
 var beaverton = new PizzaOne('Beaverton', beavertonPizza, beavertonDeliveries );
 
-// Created new Pizza shops utilizing object constructor notation
+// Created new Pizza shops utilizing object constructor notations
 
 var hillsboroPizza =
 [[1,3],[1,3],[1,3],[5,9],[5,9],[5,9],[2,13],[2,13],[2,13],[18,32],[18,32],[18,32],[1,3],[1,3],[1,3],[8,20],[8,20],[8,20]];
