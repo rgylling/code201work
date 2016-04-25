@@ -11,19 +11,46 @@ table {
   font-size: 18px;
 }
 
+
+div {
+  height: 300px;
+  position: relative;
+  width:100%;
+}
+span {
+  color:#B9121B;
+}
+
+div:before {
+  z-index:-1;
+    background-image: url('http://www.helloitalytours.com/wp-content/uploads/2013/10/Pizza-gelato7.jpg');
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  -webkit-filter:contrast(.9) brightness(.4);
+
+}
+
+
+
 h1 {
-  font-family: 'Nothing You Could Do', cursive;
+  font-family: 'Istok Web', sans-serif;
+  padding-top:40px;
   text-align: center;
-  font-size: 90px;
+  font-size: 120px;
   border-bottom-style: hidden;
-  background-color: #B9121B;
   font-weight: normal;
   margin:10px auto 0px auto;
   color:white;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 29px 39px -12px rgba(0,0,0,0.72);
-  -moz-box-shadow: 10px 29px 39px -12px rgba(0,0,0,0.72);
-  box-shadow: 10px 29px 39px -12px rgba(0,0,0,0.72);
+  font-weight:800;
 }
 
 img {
@@ -52,11 +79,9 @@ box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
 #number {
   text-align: center;
   font-size: 30px;
-  border-color: black;
-  background-color: white;
-  color: #B9121B;
-  font-family:cursive;
-  font-weight:bolder;
+  color: black;
+  font-family:raleway;
+  font-weight:300;
   margin:60px auto 10px auto;
 }
 
@@ -142,10 +167,7 @@ ul li {
   border-style: hidden;
   border-color: black;
   color: white;
-  border-radius: 50%;
-  -webkit-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
--moz-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
-box-shadow: 10px 29px 74px 9px rgba(0,0,0,0.72);
+
 }
 
 #help li {
