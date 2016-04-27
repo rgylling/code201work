@@ -1,5 +1,5 @@
 //Created a Master Time Slot
-var timeSlots = ["8:00am ","9:00am ","10:00am " ,"11:00am ","12:00am ","1:00pm ","2:00pm ","3:00pm ", "4:00pm ","5:00pm ", "6:00pm ", "7:00pm ","8:00pm ", "9:00pm ", "10:00pm ","11:00pm ", "12:00am ", "1:00am "];
+var timeSlots = ['8:00am ','9:00am ','10:00am ' ,'11:00am ','12:00am ','1:00pm ','2:00pm ','3:00pm ', '4:00pm ','5:00pm ', '6:00pm ', '7:00pm ','8:00pm ', '9:00pm ', '10:00pm ','11:00pm ', '12:00am ', '1:00am '];
 
 //Created multidimensional arrays for min and max pizzas and deliveries per time slot
 var beavertonPizza =
@@ -44,7 +44,7 @@ function PizzaOne (name,x,d){
     for(i=0; i < d.length ; i++){
       this.arr1.push(myRandomNumber (d[i][0],d[i][1]));
     }
-};
+  };
   this.pizza = function (){
     for(j=0; j < x.length ; j++){
       this.arr.push(myRandomNumber (x[j][0],x[j][1]));
@@ -61,26 +61,26 @@ function myRandomNumber (min,max) {
 
 //Function that does my drivers recommended calculation
 function drivers (a) {
-  var answer =  Math.ceil(a / 3)
-    if ( answer == 0 || answer < 0) {
-      return "Driver not recommended";
-        } else {
-          return "Drivers recommended: " + answer;
-        }
+  var answer =  Math.ceil(a / 3);
+  if ( answer == 0 || answer < 0) {
+    return 'Driver not recommended';
+  } else {
+    return 'Drivers recommended: ' + answer;
+  }
 } ;
 
 function checkNum (a,b) {
-  var doesthiswork = 0;
-  var doeswork = 1;
-    if (a == 0){
-      doesthiswork * b;
-        return doesthiswork
-      } else if (a == 1){
-        doeswork * (b-b+1);
-          return doeswork
-        } else {
-          return b
-        }
+  var zeroOut = 0;
+  var numberCheck = 1;
+  if (a == 0){
+    zeroOut * b;
+    return zeroOut;
+  } else if (a == 1){
+    numberCheck * (b-b+1);
+    return numberCheck;
+  } else {
+    return b;
+  }
 }
 
 //Holds my total pizzas
@@ -95,55 +95,55 @@ function loopMe (a,boo,c){
     totalArr.push(pizzaMath);
     var checkNumber = checkNum(boo[j],c[j]);
     var driverMath = drivers(checkNumber);
-    var body = document.getElementById("pleasework");
-    var tbl = document.createElement("table");
-    var tblBody = document.createElement("tbody");
-    var row = document.createElement("tr");
-    var cell = document.createElement("td");
-    var newText = document.createTextNode (a[j] + boo[j] + " pizzas " + checkNumber + "       deliveries, " + driverMath  );
-      if (body) {
-        cell.appendChild(newText);
-        row.appendChild(cell);
-        tblBody.appendChild(row);
-        tbl.appendChild(tblBody);
-        body.appendChild(tbl);
-       }
-   }
-   totalPizza = totalArr.reduce(function(a, b) {
-     return a + b;
-     title(totalPizza);
-    });
-console.log(totalPizza);
+    var body = document.getElementById('bodyappend');
+    var tbl = document.createElement('table');
+    var tblBody = document.createElement('tbody');
+    var row = document.createElement('tr');
+    var cell = document.createElement('td');
+    var newText = document.createTextNode (a[j] + boo[j] + ' pizzas ' + checkNumber + '       deliveries,   ' + driverMath);
+    if (body) {
+      cell.appendChild(newText);
+      row.appendChild(cell);
+      tblBody.appendChild(row);
+      tbl.appendChild(tblBody);
+      body.appendChild(tbl);
+    }
+  }
+  totalPizza = totalArr.reduce(function(a, b) {
+    return a + b;
+    title(totalPizza);
+  });
+  console.log(totalPizza);
 }
 
 /* This function takes the name of each store creates a table utilizing the dom and
 adds it to the page */
 function title (a){
-  var body = document.getElementById("pleasework");
-    if (body){
-      var tbl = document.createElement("table");
-      var tblBody = document.createElement("tbody");
-      var row = document.createElement("tr");
-      var cell = document.createElement("td");
-      var newText = document.createTextNode (a);
-        cell.appendChild(newText);
-        row.appendChild(cell);
-        tblBody.appendChild(row);
-        tbl.appendChild(tblBody);
-        body.appendChild(tbl);
-      }
+  var body = document.getElementById('bodyappend');
+  if (body){
+    var tbl = document.createElement('table');
+    var tblBody = document.createElement('tbody');
+    var row = document.createElement('tr');
+    var cell = document.createElement('td');
+    var newText = document.createTextNode (a);
+    cell.appendChild(newText);
+    row.appendChild(cell);
+    tblBody.appendChild(row);
+    tbl.appendChild(tblBody);
+    body.appendChild(tbl);
+  }
 }
 //click the button!
 
-var clickTheButton = document.getElementById("mybutton");
+var clickTheButton = document.getElementById('mybutton');
 if(clickTheButton){
 //eventListener and function for click event to add to uls
-  clickTheButton.addEventListener("click", function() {
-  var userInput = document.getElementById("textbox").value;
-  title(userInput);
-  loopMe(timeSlots,beaverton.arr,beaverton.arr1);
-  title (totalPizza + " Pizzas sold today!");
-  document.getElementById("textbox").value = "New Store Added! ;)";
+  clickTheButton.addEventListener('click', function() {
+    var userInput = document.getElementById('textbox').value;
+    title(userInput);
+    loopMe(timeSlots,beaverton.arr,beaverton.arr1);
+    title (totalPizza + ' Pizzas sold today!');
+    document.getElementById('textbox').value = 'New Store Added! ;)';
   }
 );
 };
@@ -151,26 +151,26 @@ if(clickTheButton){
 // Calling my title function to amend it to the page
 title (beaverton.name);
 // Calling several loop functions
-loopMe(timeSlots,beaverton.arr,beaverton.arr1)
-title (totalPizza + " Pizzas sold today!")
+loopMe(timeSlots,beaverton.arr,beaverton.arr1);
+title (totalPizza + ' Pizzas sold today!');
 title (hillsboro.name);
-loopMe(timeSlots,hillsboro.arr,hillsboro.arr1)
-title (totalPizza + " Pizzas sold today!")
+loopMe(timeSlots,hillsboro.arr,hillsboro.arr1);
+title (totalPizza + ' Pizzas sold today!');
 title (downtown.name);
-loopMe(timeSlots,downtown.arr,downtown.arr1)
-title (totalPizza + " Pizzas sold today!")
+loopMe(timeSlots,downtown.arr,downtown.arr1);
+title (totalPizza + ' Pizzas sold today!');
 title (northeast.name);
-loopMe(timeSlots,northeast.arr,northeast.arr1)
-title (totalPizza + " Pizzas sold today!")
+loopMe(timeSlots,northeast.arr,northeast.arr1);
+title (totalPizza + ' Pizzas sold today!');
 title (clackamas.name);
-loopMe(timeSlots,clackamas.arr,clackamas.arr1)
-title (totalPizza + " Pizzas sold today!")
+loopMe(timeSlots,clackamas.arr,clackamas.arr1);
+title (totalPizza + ' Pizzas sold today!');
 title (airport.name);
-loopMe(timeSlots,airport.arr,airport.arr1)
-title (totalPizza + " Pizzas sold today!")
+loopMe(timeSlots,airport.arr,airport.arr1);
+title (totalPizza + ' Pizzas sold today!');
 
 var workPlease = document.getElementById('number');
 //Logged totalPizza and multiplied by 5 to get a weekly average
 if (workPlease){
-workPlease.textContent = (totalPizza * 5) + ' Number Happy Customers This Week!';
+  workPlease.textContent = (totalPizza * 5) + ' Number Happy Customers This Week!';
 };
