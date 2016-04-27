@@ -172,5 +172,5 @@ title (totalPizza + " Pizzas sold today!")
 var workPlease = document.getElementById('number');
 //Logged totalPizza and multiplied by 5 to get a weekly average
 if (workPlease){
-workPlease.textContent = (totalPizza * 5) + ' Number Happy Pizza Odysseys This Week!';
+workPlease.textContent = (totalPizza * 5) + ' Number Happy Customers This Week!';
 };
