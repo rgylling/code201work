@@ -1,6 +1,8 @@
 //This function loads my html and css before my javascript
-window.onload = function() {
 
+
+//window.onload = function() {
+/*
 //Keeps users score
 var answersRight = 0;
 
@@ -106,4 +108,9 @@ getRightAnswers ();
 
 // This is the end of the game prompting user how many questions they got right.
 userScore ();
-};
+//};
+*/
+
+$(document).ready(function($) {
+  $('#dp3').datepicker();
+});
